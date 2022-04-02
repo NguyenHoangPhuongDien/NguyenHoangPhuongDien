@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @NguyenHoangPhuongDien
 - 👀 I’m interested in Games
-- 🌱 I’m currently learning ...
+- 🌱 I’m currently learning html language
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me 
 
