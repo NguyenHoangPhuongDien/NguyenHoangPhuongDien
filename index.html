@@ -76,6 +76,7 @@
         right: 0;
         top: 0;
   }
+}
   .topnav.responsive a {
         float: none;
         display: block;
@@ -95,15 +96,26 @@
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
+</div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>  
 </header>
 <section> 
 <p>◄Các bộ phim chỉ mang tính chất giải trí , vui lòng không thực hiện theo các hành động có trong phim►</p>
 </section>
 <div style="padding-left:16px"><br><br><br><br><br><br><br><br>
   <h2>Thế giới điện ảnh</h2>  
-<form>
+<form class="search-bar">
     <input type="text" placeholder="Nhập vào bộ phim bạn cần tìm">
-    <button>OK</button>
+    <button type="submit">OK</button>
 </form>
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
