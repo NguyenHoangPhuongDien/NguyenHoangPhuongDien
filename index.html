@@ -1,128 +1,305 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background-image: url('https://wallpaperaccess.com/full/907544.jpg');
-}
-      h2 {
-        text-align: center;
-}
-      .topnav {
-        overflow: hidden;
-        background-color: #333;
-}
+<html lang="en">
 
-      .topnav a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-}
+<head>
+    <meta charset="utf-8">
+    <title>Chào mừng đến với trang web</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+     
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
 
-      .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-}
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-      .topnav a.active {
-        background-color:#5473a8 ;
-        color: white;
-}
-
-      .topnav .icon {
-        display: none;
-}
-
-      header {
-        text-align: center;
-
-}
-      section {
-        background-color: #5b58ad;
-        text-align:center;
-}
-
-      footer {
-        background-color:#333;
-        text-align: center;
-}
-      form {
-        text-align: center;
-      }
-      h2 {
-        font-size: 50px;
-        Color:#f7f5f5;
-      }
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-        float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-  }
-}
-  .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-  }
-
-}
-</style>
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-<header>  
-<div class="topnav" id="myTopnav">
-  <a href="nguyenhoangphuongdien.github.io">Trang chủ</a>
-  <a href="">Phim mới nhất</a>
-  <a href="">Các diễn viên nổi bật</a>
-  <a href="www.facebook.com/Dien.22122002">Liên hệ</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-  <script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  </script>  
-</header>
-<section> 
-<p>◄Các bộ phim chỉ mang tính chất giải trí , vui lòng không thực hiện theo các hành động có trong phim►</p>
-</section>
-<div style="padding-left:16px"><br><br><br><br><br><br><br><br>
-  <h2>Thế giới điện ảnh</h2>  
-<form class="search-bar">
-    <input type="text" placeholder="Nhập vào bộ phim bạn cần tìm">
-    <button type="submit">OK</button>
-</form>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<footer>
-  <p>
-    Copyright 2022
-  </p>
-</footer>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">M</span>W</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Trang chủ</a>
+                <a href="#about" class="nav-item nav-link">Thông tin</a>
+                <a href="#skill" class="nav-item nav-link">Kỹ năng</a>
+                <a href="#service" class="nav-item nav-link">Dịch vụ</a>
+                <a href="#testimonial" class="nav-item nav-link">Review</a>
+                <a href="#contact" class="nav-item nav-link">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End -->
+
+    <!-- Header -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="https://avatars.githubusercontent.com/u/92964004?s=400&u=b19fdba988477a9519c35037a3023310d12efa5d&v=4" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Tôi là</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Nguyễn Hoàng Phương Diễn</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Tôi là nhà lập trình web</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Thông tin -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="position-absolute text-uppercase text-primary">Thông tin cá nhân</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="https://avatars.githubusercontent.com/u/92964004?s=400&u=b19fdba988477a9519c35037a3023310d12efa5d&v=4" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Một chút về tôi</h3>
+                    <p>Tôi là sinh viên năm nhất đến từ trường cao đẳng kỹ thuật công nghệ Nha Trang</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Tên: <span class="text-secondary">Nguyễn Hoàng Phương Diễn</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Năm sinh: <span class="text-secondary">21/12/2002</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Trình độ: <span class="text-secondary">Nghiệp dư</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Số điện thoại: <span class="text-secondary">0704948901</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">nguyenhoangphuongdien@gmail.com</span></h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Kỹ năng -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Kỹ năng</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Kỹ năng cơ bản của tôi</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">65%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">55%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                        <div class="progress">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">5%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+
+    <!-- Dịch vụ -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Dịch vụ</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Thiết kế web</h4>
+                    </div>
+                    <p>Tạo mới và thiết kế một trang web dành riêng cho bạn</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Đọc thêm</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Thiết kế ứng dụng</h4>
+                    </div>
+                    <p>Tạo dựng và thiết lập ứng dụng người dùng</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Đọc thêm</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Thiết kế game</h4>
+                    </div>
+                    <p>Xây dựng model nhân vật và cốt truyện cho các phần mềm game</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Đọc thêm</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Content</h4>
+                    </div>
+                    <p>Tạo content cho bạn</p>
+                    <a class="border-bottom border-primary text-decoration-none" href="">Đọc thêm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Review -->
+    <div class="container-fluid py-5" id="testimonial">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Ý kiến khách hàng</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dịch vụ rất tốt mặc dù chưa dùng lần nào</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="https://media.vov.vn/uploaded/ed7pinll54crb7fgmumzw/2019_11_21/112111-2.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Bill Gate</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Giống Bill Gate</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2022-06/220606-elon-musk-se-149p-0d123f.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Elon Musk</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Anh ♥ là anh không thương em rồi</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg/250px-Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Not Jack5tr</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Liên hệ -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Liên hệ</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Liên hệ tôi</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Tên của bạn"
+                                        required="required" data-validation-required-message="Vui lòng nhập thông tin" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Email"
+                                        required="required" data-validation-required-message="Vui lòng nhập thông tin" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Chủ đề"
+                                    required="required" data-validation-required-message="Vui lòng nhập thông tin" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Ý kiến của bạn"
+                                    required="required"
+                                    data-validation-required-message="Vui lòng nhập thông tin"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Gửi ý kiến</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Quyền riêng tư</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Các điều khoản</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Giải đáp</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Hỗ trợ</a>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Cuộn xuống -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back về -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
