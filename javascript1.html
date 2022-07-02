@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+             <style>
+               #qt{
+                 width:170px;
+                 border-radius:10px;               
+               }
+               .nut1{
+                 border-radius:10px;
+                 width :100px;
+               }
+              .nut2{                
+                 padding-bottom:10px;
+               }
+               #pten{
+                 padding-top:10px;
+               }
+               #ten{
+                 width:205px;
+               }
+               #email{
+                 width:192px;
+               }
+               #tp{
+                 float:left;
+                background: #524259;
+                 width:240px;
+                  height:304px;
+                 padding-left:10px;          
+               }
+               #a1{
+                  float:left;
+                 width:250px;
+                 background:#b5a891;
+                 height:auto;
+               }
+               .fname{
+                 border-radius:10px;
+               }
+               #gt1{
+                 float: left;
+               }
+               #gt2{
+                 margin:15px;
+               }
+             </style>
+           </head>
+    <body>
+            <div id= a1>
+                 <form id="myForm" action=""><p id= pten> Tên: <input type="text" id = ten class="fname" name="fname"><br/></p></form>
+             Email: <input type="text"id=email class="fname" name="fname"><br/>
+            <p id=gt>
+               Giới  Tính:
+             <form id= nn>
+<input name="gioitinh" type="radio" value="Nam" />Nam
+<input name="gioitinh" type="radio" value="Nữ" />Nữ
+            </form><p>
+             Quốc Tịch:<select name="startype" id="qt">
+ 
+     <option selected="selected"></option>
+     <option value="Viet Nam">Việt Nam</option>
+     <option value="Australia">Hàn Quốc</option> 
+     <option value="Campuchia">Trung Quốc</option>  
+   <select>
+ <br/><br/>
+            Sở Thích:</br>
+    <input type="checkbox" name="st1" value="">
+    <label for="st1">Lập Trình</label><br>
+    <input type="checkbox" name="st2" value="">
+    <label for="st2">Chơi thể thao</label><br>
+    <input type="checkbox" name="st3" value="">
+    <label for="st3">Chơi game</label><br><checked></checked>
+      <div class = nut>
+        <button onclick="hienthi()">
+            Chấp Nhận
+        </button>
+        <button>
+            Hủy
+        </button>
+             </div>
+             </div>
+      <div id = tp>
+        <p>Tên:</p>
+        <p>Email:</p>
+        <p>Giới Tính:</p>
+        <p>Quốc Tịch:</p>
+        <p>Sở Thích:</p>
+             </div>
+              <script>function hienthi() {
+	document.getElementById("tp").innerHTML = "Tên:" + document.forms["myForm"].any;}</script> 
+    <script>function hienthi() {
+        	document.getElementById("tp").innerHTML = "Email:" + document.forms["myForm"].any;}</script> 
+    <script>function hienthi() {
+        	document.getElementById("tp").innerHTML = "Giới tính:" + document.forms["myForm"].any;}</script>
+    <script>function hienthi() {
+            document.getElementById("tp").innerHTML = "Quốc tịch:" + document.forms["myForm"].any;}</script>
+    <script>function hienthi() {
+             document.getElementById("tp").innerHTML = "Sở thích:" + document.forms["myForm"].any;}</script>
+           </body>
+    </html>
