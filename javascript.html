@@ -1,5 +1,4 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
            <head>
             <style>
@@ -38,19 +37,29 @@
            <button type="button" onclick="tinhtong()">Tính tổng</button>
           <button type="button" onclick="tinhtongchan()">Tính tổng chẵn</button>
             <script>
-              function hienthi() {
-	        // Giới thiệu tên
-                document.getElementById("noidung").innerHTML = "Xin chào . Tôi là " + document.forms["myForm"].textname.value;
-              }
-             function tinhtong() {
+          function hienthi() {
+// Giới thiệu tên
+            document.getElementById("noidung").innerHTML = "Xin chào! Tôi là : " + document.forms["myForm"].textname.value;
+          }
+          function tinhtong() {
                   //Tính tổng từ 1 -> n
-	document.getElementById("noidung").innerHTML ="Tổng từ 1 đến " +  document.forms["myForm"].n.value + " là: ";
+                  let text =0;
+                  for( let i=1 ; i<=document.forms["myForm"].n.value;i++){
+                       text +=i;
+                  }
+	document.getElementById("noidung").innerHTML ="Tổng từ 1 đến " +  document.forms["myForm"].n.value + " là: "+text;
               }
             function tinhtongchan() {
                   //Tính tổng các số chẳn từ 1 -> n
-	document.getElementById("noidung").innerHTML ="Tổng các số chẵn từ 1 đến " +  document.forms["myForm"].n.value + " là: ";
+                  let text =0;
+                  for( let i=1 ; i<=document.forms["myForm"].n.value;i++){
+                    if(i%2==0){
+                       text +=i;
+                  }
+                }
+                  
+	document.getElementById("noidung").innerHTML ="Tổng các số chẵn từ 1 đến " +  document.forms["myForm"].n.value + " là: "+text;
               }
-            </script>    
+        </script>    
          </body>
     </html>
-      
