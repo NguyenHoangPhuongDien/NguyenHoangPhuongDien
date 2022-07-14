@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url('https://cdn.dribbble.com/users/688785/screenshots/4407569/grass.gif');
+    }
+    .bt{
+        text-align: center;
+        width: 300px;
+        height: 400px;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    .input{
+        width: 200px;
+        height: 40px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+    button{
+        width: 200px;
+        height: 40px;
+        margin-bottom: 10px;
+        background-color: ;
+    }
+</style>
+<body>
+    <div class="bt">
+        <h2>Bảng tính</h2>
+    <header>
+    Nhập số a:
+    <input type="text" id="n1"><br><br>
+    Nhập số b:
+    <input type="text" id="n2"><br><br>
+    <select id="ptt" >
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select> 
+    </header>
+    <br>
+    <section>
+    Kết quả:
+    <input type="text" id="kq"><br><br>
+    <button onclick="myFunction()">Chấp nhận</button>
+    <button onclick="myFunction()">Hủy</button>
+    <script type="text/javascript">
+        function myFunction(){
+            var n1= document.getElementById("n1").value;
+            var n2= document.getElementById("n2").value;
+            var ptt = document.getElementById('ptt').value;
+            var kq = 0;
+            if (ptt=="+"){  
+                kq = parseInt(n1) + parseInt(n2);   
+            }
+                else if{
+                kq = parseInt(n1) - parseInt(n2);
+            }
+                else if(ptt=="*"){
+                kq = parseInt(n1) * parseInt(n2);
+            }
+                else(ptt=="/"){
+                if(n2==0){
+                    alert("Lỗi");                  
+                }else{
+                    kq = parseInt(n1) / parseInt(n2);
+                }
+            }
+            document.getElementById('kq').value = kq;
+        } 
+    </section>  
+    </script>  
+</div>
+</body>
+</html>
