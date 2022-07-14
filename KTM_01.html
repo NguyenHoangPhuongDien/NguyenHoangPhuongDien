@@ -34,20 +34,17 @@
 <body>
     <div class="bt">
         <h2>Bảng tính</h2>
-    <header>
     Nhập số a:
     <input type="text" id="n1"><br><br>
     Nhập số b:
     <input type="text" id="n2"><br><br>
-    <select id="ptt" >
+    <select id="operator" >
         <option>+</option>
         <option>-</option>
         <option>*</option>
         <option>/</option>
     </select> 
-    </header>
     <br>
-    <section>
     Kết quả:
     <input type="text" id="kq"><br><br>
     <button onclick="myFunction()">Chấp nhận</button>
@@ -56,27 +53,29 @@
         function myFunction(){
             var n1= document.getElementById("n1").value;
             var n2= document.getElementById("n2").value;
-            var ptt = document.getElementById('ptt').value;
+            var operator = document.getElementById('operator').value;
             var kq = 0;
-            if (ptt=="+"){  
-                kq = parseInt(n1) + parseInt(n2);   
+            if (operator=="+"){  
+                    kq = parseInt(n1) + parseInt(n2);
+                    document.getElementById('kq').value = kq; 
             }
-                else if{
-                kq = parseInt(n1) - parseInt(n2);
+                else if(operator=="-"){
+                    kq = parseInt(n1) - parseInt(n2);
+                    document.getElementById('kq').value = kq;
             }
-                else if(ptt=="*"){
-                kq = parseInt(n1) * parseInt(n2);
-            }
-                else(ptt=="/"){
-                if(n2==0){
+                else if(operator=="*"){
+                    kq = parseInt(n1) * parseInt(n2);
+                    document.getElementById('kq').value = kq;
+            }   
+                else{
+                    if(n2==0){  
                     alert("Lỗi");                  
                 }else{
                     kq = parseInt(n1) / parseInt(n2);
+                    document.getElementById('kq').value = kq;
                 }
             }
-            document.getElementById('kq').value = kq;
         } 
-    </section>  
     </script>  
 </div>
 </body>
